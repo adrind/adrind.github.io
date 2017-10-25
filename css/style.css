@@ -1,0 +1,42 @@
+.nav .fa {
+    font-size: 24px;
+}
+
+.avatar {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.about-me {
+    color: #616161;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.about-me h3,
+.about-me p {
+    margin: 0;
+}
+
+.about-me .fa {
+    position: relative;
+    top: -5px;
+}
+
+html, body, .block {
+    height: 100%;
+}
+
+.section h5 {
+    text-decoration: underline;
+}
+
+.section-title {
+    font-size: 28px;
+}
+
+.page-footer {
+    font-size: 28px;
+    padding-bottom: 5px;
+}
