@@ -12,6 +12,7 @@
     color: #616161;
     line-height: 22px;
     font-size: 18px;
+    margin-bottom: 30px;
 }
 
 .about-me h3,
@@ -40,6 +41,7 @@ html, body, .block {
 .page-footer {
     font-size: 26px;
     padding-bottom: 5px;
+    margin-top: 30px;
 }
 
 .keyword {
@@ -49,4 +51,41 @@ html, body, .block {
 body a {
     color: white;
     text-decoration: underline;
+}
+
+.logo-section h5 {
+    color: #616161;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.logo-section .images {
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.logo-img-sq {
+    margin-bottom: 15px;
+    width: 75px;
+}
+
+.logo-section {
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.logo-section.right {
+    border-left: 1px solid #616161;
+    padding-bottom: 30px;
+}
+
+
+.logos {
+    border-bottom: 1px solid #616161;
+    margin-bottom: 0;
 }
