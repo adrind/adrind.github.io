@@ -89,3 +89,19 @@ body a {
     border-bottom: 1px solid #616161;
     margin-bottom: 0;
 }
+
+@media (max-width: 600px) {
+    .logos,
+    .logo-section.last {
+        border-bottom: none;
+    } 
+
+    .logo-section.right {
+        border-left: none;
+        padding-bottom: 0;
+    }
+
+    .logo-section {
+        border-bottom: 1px solid #616161;
+    }
+}
