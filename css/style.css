@@ -53,55 +53,74 @@ body a {
     text-decoration: underline;
 }
 
-.logo-section h5 {
-    color: #616161;
-    font-size: 26px;
-    margin-bottom: 20px;
-    margin-top: 15px;
-}
-
-.logo-section .images {
-    margin-bottom: 15px;
-}
-
 .logo-img {
-    width: 150px;
+    height: 55px;
     margin-bottom: 15px;
+    padding: 5px;
+    animation: float 6s ease-in-out infinite;
 }
 
-.logo-img-sq {
+.logo-img-inverse {
+    height: 55px;
+    padding: 5px;
     margin-bottom: 15px;
-    width: 75px;
+    animation: float-inverse 6s ease-in-out infinite;
 }
 
-.logo-section {
-    padding-bottom: 30px;
-    padding-top: 10px;
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
-.logo-section.right {
-    border-left: 1px solid #616161;
-    padding-bottom: 30px;
+@keyframes float-inverse {
+    0% {
+        transform: translatey(-20px);
+    }
+    50% {
+        transform: translatey(0px);
+    }
+    100% {
+        transform: translatey(-20px);
+    }
 }
 
-
-.logos {
-    border-bottom: 1px solid #616161;
-    margin-bottom: 0;
+@keyframes float-side {
+    0% {
+        transform: translatex(-20px);
+    }
+    50% {
+        transform: translatex(0px);
+    }
+    100% {
+        transform: translatex(-20px);
+    }
 }
+
+@keyframes float-side-inverse {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-20px);
+    }
+    100% {
+        transform: translatex(0px);
+    }
+}
+
 
 @media (max-width: 600px) {
-    .logos,
-    .logo-section.last {
-        border-bottom: none;
-    } 
-
-    .logo-section.right {
-        border-left: none;
-        padding-bottom: 0;
+    .logo-img {
+        animation: float-side 6s ease-in-out infinite;  
     }
-
-    .logo-section {
-        border-bottom: 1px solid #616161;
+    .logo-img-inverse {
+        animation: float-side-inverse 6s ease-in-out infinite;  
     }
 }
