@@ -12,7 +12,7 @@
     color: #616161;
     line-height: 22px;
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .about-me h3,
@@ -117,6 +117,9 @@ body a {
 
 
 @media (max-width: 600px) {
+    .about-me {
+        margin-bottom: 40px;
+    }
     .logo-img {
         animation: float-side 6s ease-in-out infinite;  
     }
